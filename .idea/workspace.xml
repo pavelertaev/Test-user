@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6023b621-9d84-482c-9dee-8d4af47a3bc2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skypro/EmailCorrectException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skypro/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skypro/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/skypro/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/skypro/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6023b621-9d84-482c-9dee-8d4af47a3bc2" name="Changes" comment="ДЗ сделал жду проверки" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,8 +52,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674849512369</updated>
-      <workItem from="1674849514135" duration="3963000" />
+      <workItem from="1674849514135" duration="4039000" />
     </task>
+    <task id="LOCAL-00001" summary="ДЗ сделал жду проверки">
+      <created>1674853547387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674853547387</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,5 +77,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ДЗ сделал жду проверки" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ сделал жду проверки" />
   </component>
 </project>

@@ -26,9 +26,11 @@ public class UserTest {
     @Test
     @DisplayName("When email has @ and ' . ' Not at the end , then email is correct ")
     public void correctEmail() {
-        String email = "pavel@.ru";
-        Assertions.assertEquals("@","@");
-        Assertions.assertEquals(".",".");
+        String email = "pavel.ru";
+        String login = "pavel";
+        User user = new User(login,email);
+        Assertions.assertTrue(user.getEmail().contains("@"));
+        Assertions.assertTrue(user.getEmail().contains("."));
     }
 
     @Test
