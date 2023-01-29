@@ -8,7 +8,12 @@ public class User {
     }
 
     public User(String login, String email) {
-        this.login = login;
+        if(!login.equals(email)){
+            this.login = login;
+        }else {
+            throw  new LoginNotCorrectException();
+        }
+
         if(email.contains("@")&& email.contains(".")){
             this.email = email;
         }else {

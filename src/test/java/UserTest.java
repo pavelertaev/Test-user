@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.skypro.EmailCorrectException;
+import org.skypro.LoginNotCorrectException;
 import org.skypro.User;
 
 public class UserTest {
@@ -24,13 +26,11 @@ public class UserTest {
     }
 
     @Test
-    @DisplayName("When email has @ and ' . ' Not at the end , then email is correct ")
-    public void correctEmail() {
-        String email = "pavel.ru";
+    @DisplayName("When email  has not  @ and ' . ' , then email is not correct ")
+    public void correctEmailException() {
+        String email = "pavel@ru";
         String login = "pavel";
-        User user = new User(login,email);
-        Assertions.assertTrue(user.getEmail().contains("@"));
-        Assertions.assertTrue(user.getEmail().contains("."));
+        Assertions.assertThrows(EmailCorrectException.class,()-> new User(login,email) );
     }
 
     @Test
@@ -38,6 +38,6 @@ public class UserTest {
     public void loginNotEqualsEmail() {
         String login = "pavel";
         String email = "pavel@.ru";
-        Assertions.assertNotEquals(login, email);
+        Assertions.assertThrows(LoginNotCorrectException.class,()-> new User(login,email));
     }
 }
